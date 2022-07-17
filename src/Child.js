@@ -6,7 +6,7 @@ function Child({ onChangeColor ,color}) {
   function handleClick() {
     const newColor = getRandomColor();
     onChangeColor(newColor);
-  }
+  };
   
   
  
@@ -18,4 +18,5 @@ function Child({ onChangeColor ,color}) {
     />
   );
 }
+
 export default Child;
