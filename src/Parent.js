@@ -7,9 +7,10 @@ function Parent() {
   const [color, setColor] = useState(randomColor);
   const [childrenColor, setChildrenColor] = useState("#FFF");
   
-  function handleChangeColor() {
+  function handleChangeColor(newChildColor) {
    const newRandomColor = getRandomColor();
     setColor(newRandomColor); // update color state to a new value
+    setChildrenColor(newChildColor);
   }
   return (
     <div className="parent" style={{ backgroundColor: color }}>
